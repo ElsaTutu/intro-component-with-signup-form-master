@@ -10,19 +10,23 @@ function validateForm(){
 	if (firstName.length<1) {
         document.getElementById('error-firstName').innerHTML = " First Name cannot be empty";
         document.getElementsByName('firstname')[0].placeholder=' ';
-        
+        document.getElementById('fname').classList.add("invalid");
     }
     if (lastName.length<1) {
         document.getElementById('error-lastName').innerHTML = " Last Name cannot be empty";
         document.getElementsByName('lastname')[0].placeholder=' ';
+        document.getElementById('lname').classList.add("invalid");
+
     }
     if (email.length<1) {
         document.getElementById('error-email').innerHTML = " Looks like this is not an email";    
         document.getElementsByName('email')[0].placeholder='email@example/com';  
+        document.getElementById('email').classList.add("invalid");
     }
     if (password.length<1) {
         document.getElementById('error-password').innerHTML = " Password cannot be empty";
         document.getElementsByName('password')[0].placeholder=' ';
+        document.getElementById('password').classList.add("invalid");
     }   
           
     if(firstName.length<1 || lastName.length<1 || email.length<1 || !filter.test(email.value) || password.length<1){

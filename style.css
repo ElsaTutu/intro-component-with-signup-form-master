@@ -22,13 +22,11 @@ a {
 
 }
 
+/* layout */
+
 .wrapper {
   display: flex;
   flex-direction: column;
-  
-
-  
-  
 }
 
 .wrapper_left {
@@ -45,6 +43,7 @@ a {
   justify-content: center;
 }
 
+/* form part */
 .wrapper_right_box {
   margin: 1em 1em 2em 1em;
   background-color: hsl(248, 32%, 49%);
@@ -81,6 +80,7 @@ button {
   border-radius: 8px;
 }
 
+/* bottom part */
 .wrapper_right_form_conditions {
   font-size: 12px;
   margin: 0.5em 2.5em;
@@ -97,6 +97,7 @@ button {
   margin: 0.5em 2.5em;
   text-align: center;
 }
+
 
 @media screen and (min-width: 1440px) {
   body{
@@ -129,11 +130,18 @@ button {
 #error-password {
 text-align: end;
 font-size: 10px;
-color: red;
+color:hsl(0, 100%, 74%);
 margin: 0.5em;
 }
 
-
-/* input:invalid {
-  border: 2px solid orangered;
-} */
+/* Class to add after the if in JS */
+.invalid {
+  border: 1px solid hsl(0, 100%, 74%);
+  border-radius: 8px;
+  background-image: url('images/icon-error.svg');
+  background-position: 95% 50%;
+  padding-right: 0.5em;
+  /* display: inline-block; */
+  background-repeat: no-repeat;
+  color: hsl(0, 94%, 67%);
+}
