@@ -1,0 +1,38 @@
+/* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+     */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'); 
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+font-size: 16px;
+font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-image: url('/images/bg-intro-desktop.png');
+  
+}
+
+.wrapper_left {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5em;
+  text-align: center;
+}
+
+.wrapper_left_title,
+.wrapper_left_text{
+  display: flex;
+  justify-content: center;
+}
