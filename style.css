@@ -121,3 +121,19 @@ button {
     font-size: 48px;
   }
 }
+
+/* errors messages */
+#error-firstName, 
+#error-lastName, 
+#error-email, 
+#error-password {
+text-align: end;
+font-size: 10px;
+color: red;
+margin: 0.5em;
+}
+
+
+/* input:invalid {
+  border: 2px solid orangered;
+} */
